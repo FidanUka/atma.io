@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ms.Inventory", "Ms.Inventory\Ms.Inventory.csproj", "{0448BCFE-052B-4702-9A26-FCF6EA5CC1BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{2598C119-8E1A-43B8-B837-163EB5CC2698}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ms.Inventory.Dto", "Ms.Inventory.Dto\Ms.Inventory.Dto.csproj", "{AE603826-C22D-4966-938B-A0DB57E2DB74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{B4F6ECF0-EDA4-45E0-87CA-59F4174BA0E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ms.Inventory.BusinessLogic", "Ms.Inventory.BusinessLogic\Ms.Inventory.BusinessLogic.csproj", "{29184D4D-64EC-46A5-B028-7419892D1660}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ms.Inventory.BusinessLogic.Blo", "Ms.Inventory.BusinessLogic.Blo\Ms.Inventory.BusinessLogic.Blo.csproj", "{F4B1F653-D48B-40B5-BFF4-F8D6E965C684}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{05ED1E65-65A1-44C0-A2C7-F30EF95CF77E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ms.Inventory.Database", "Ms.Inventory.Database\Ms.Inventory.Database.csproj", "{036C2E4E-CD8B-4B62-80F9-F41F9779E4B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{44588E6C-45F9-48AC-90B5-F8696B40D9C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ms.Inventory.Shared", "Ms.Inventory.Shared\Ms.Inventory.Shared.csproj", "{40F6EF91-2EE8-4EC0-83FC-394FC7FBE787}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DA19441B-3C7A-4D44-BBBE-3C144653F475}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ms.Inventory.IntegrationTests", "Ms.Inventory.IntegrationTests\Ms.Inventory.IntegrationTests.csproj", "{74934D6D-82E3-4F47-BEAF-A4A369558830}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0448BCFE-052B-4702-9A26-FCF6EA5CC1BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0448BCFE-052B-4702-9A26-FCF6EA5CC1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0448BCFE-052B-4702-9A26-FCF6EA5CC1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0448BCFE-052B-4702-9A26-FCF6EA5CC1BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE603826-C22D-4966-938B-A0DB57E2DB74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE603826-C22D-4966-938B-A0DB57E2DB74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE603826-C22D-4966-938B-A0DB57E2DB74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE603826-C22D-4966-938B-A0DB57E2DB74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29184D4D-64EC-46A5-B028-7419892D1660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29184D4D-64EC-46A5-B028-7419892D1660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29184D4D-64EC-46A5-B028-7419892D1660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29184D4D-64EC-46A5-B028-7419892D1660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4B1F653-D48B-40B5-BFF4-F8D6E965C684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B1F653-D48B-40B5-BFF4-F8D6E965C684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B1F653-D48B-40B5-BFF4-F8D6E965C684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B1F653-D48B-40B5-BFF4-F8D6E965C684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{036C2E4E-CD8B-4B62-80F9-F41F9779E4B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036C2E4E-CD8B-4B62-80F9-F41F9779E4B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036C2E4E-CD8B-4B62-80F9-F41F9779E4B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036C2E4E-CD8B-4B62-80F9-F41F9779E4B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40F6EF91-2EE8-4EC0-83FC-394FC7FBE787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40F6EF91-2EE8-4EC0-83FC-394FC7FBE787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40F6EF91-2EE8-4EC0-83FC-394FC7FBE787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40F6EF91-2EE8-4EC0-83FC-394FC7FBE787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74934D6D-82E3-4F47-BEAF-A4A369558830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74934D6D-82E3-4F47-BEAF-A4A369558830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74934D6D-82E3-4F47-BEAF-A4A369558830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74934D6D-82E3-4F47-BEAF-A4A369558830}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0448BCFE-052B-4702-9A26-FCF6EA5CC1BC} = {2598C119-8E1A-43B8-B837-163EB5CC2698}
+		{AE603826-C22D-4966-938B-A0DB57E2DB74} = {2598C119-8E1A-43B8-B837-163EB5CC2698}
+		{29184D4D-64EC-46A5-B028-7419892D1660} = {B4F6ECF0-EDA4-45E0-87CA-59F4174BA0E4}
+		{F4B1F653-D48B-40B5-BFF4-F8D6E965C684} = {B4F6ECF0-EDA4-45E0-87CA-59F4174BA0E4}
+		{036C2E4E-CD8B-4B62-80F9-F41F9779E4B8} = {05ED1E65-65A1-44C0-A2C7-F30EF95CF77E}
+		{40F6EF91-2EE8-4EC0-83FC-394FC7FBE787} = {44588E6C-45F9-48AC-90B5-F8696B40D9C8}
+		{74934D6D-82E3-4F47-BEAF-A4A369558830} = {DA19441B-3C7A-4D44-BBBE-3C144653F475}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {851EA7EA-AE80-4D8E-9EE7-5F75CF5CA580}
+	EndGlobalSection
+EndGlobal
