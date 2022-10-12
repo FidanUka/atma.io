@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Ms.Inventory.BusinessLogic.Blo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Ms.Inventory.BusinessLogic.Blo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ms.Inventory.BusinessLogic.Blo.dll": {}
+        }
+      },
+      "Ms.Inventory.BusinessLogic.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Ms.Inventory.BusinessLogic.Blo": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ms.Inventory.BusinessLogic.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ms.Inventory.BusinessLogic.Contracts.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Ms.Inventory.BusinessLogic.Blo/1.0.0": {
+      "type": "project",
+      "path": "../Ms.Inventory.BusinessLogic.Blo/Ms.Inventory.BusinessLogic.Blo.csproj",
+      "msbuildProject": "../Ms.Inventory.BusinessLogic.Blo/Ms.Inventory.BusinessLogic.Blo.csproj"
+    },
+    "Ms.Inventory.BusinessLogic.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Ms.Inventory.BusinessLogic.Contracts/Ms.Inventory.BusinessLogic.Contracts.csproj",
+      "msbuildProject": "../Ms.Inventory.BusinessLogic.Contracts/Ms.Inventory.BusinessLogic.Contracts.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Ms.Inventory.BusinessLogic.Contracts >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\fidan.uka\\.nuget\\packages\\": {},
@@ -41,7 +78,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\fidan.uka\\source\\repos\\Ms.Inventory\\Ms.Inventory.BusinessLogic.Contracts\\Ms.Inventory.BusinessLogic.Contracts.csproj": {
+              "projectPath": "C:\\Users\\fidan.uka\\source\\repos\\Ms.Inventory\\Ms.Inventory.BusinessLogic.Contracts\\Ms.Inventory.BusinessLogic.Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -59,7 +100,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -68,7 +110,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.109\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -4,4 +4,18 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Configurations\Mapping\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ms.Inventory.BusinessLogic.Blo\Ms.Inventory.BusinessLogic.Blo.csproj" />
+    <ProjectReference Include="..\Ms.Inventory.BusinessLogic.Contracts\Ms.Inventory.BusinessLogic.Contracts.csproj" />
+    <ProjectReference Include="..\Ms.Inventory.Dto\Ms.Inventory.Dto.csproj" />
+  </ItemGroup>
+
 </Project>
