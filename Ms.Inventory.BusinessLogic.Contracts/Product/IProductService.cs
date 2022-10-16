@@ -5,6 +5,6 @@ namespace Ms.Inventory.BusinessLogic.Contracts.Product
 {
     public interface IProductService
     {
-        Task SaveProduct(ProductBlo productBlo);
+        Task SaveProducAsync(ProductBlo productBlo);
     }
 }

@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "rxBoH8GXPZlEcok6P8My1oHv/QVt2F5+7UzdCiLc9qWdCM3UXD191v33M+LHFQB411Aj4x0QksTLZ9g5qAw/6Q==",
+  "dgSpecHash": "D0ORsd9NimAubW40RvMiwvBC0Ug3lIHLevqT6O2hheblWjuV0gCGn/DMGXosvLGzgQGPhJB/w8LZVGc+OBGToQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\fidan.uka\\source\\repos\\Ms.Inventory\\Ms.Inventory.BusinessLogic\\Ms.Inventory.BusinessLogic.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\fidan.uka\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\fidan.uka\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -12,6 +12,7 @@ namespace Ms.Inventory.Controllers
     {
         private readonly IInventoryDataService _inventoryDataService;
         private readonly IMapper _mapper;
+
         public InventoryController(IInventoryDataService inventoryDataService,
             IMapper mapper)
         {
@@ -28,14 +29,14 @@ namespace Ms.Inventory.Controllers
         }
 
         [HttpGet, Route("{itemReference}/{inventoryId}")]
-        public async Task<ActionResult<int>> GetInventoryData([FromRoute] long itemReference, [FromRoute] string inventoryId)
+        public async Task<ActionResult<int>> GetInventoryData([FromRoute] int itemReference, [FromRoute] string inventoryId)
         {
             int count = await _inventoryDataService.GetInventoryCountByProductAndInventoryIdAsync(itemReference, inventoryId);
             return Ok(count);
         }
             
         [HttpGet, Route("{itemReference}")]
-        public async Task<ActionResult<int>> GetInventoryData([FromRoute] long itemReference)
+        public async Task<ActionResult<int>> GetInventoryData([FromRoute] int itemReference)
         {
             int count = await _inventoryDataService.GetInventoryCountByProductPerDayAsync(itemReference);
             return Ok(count);

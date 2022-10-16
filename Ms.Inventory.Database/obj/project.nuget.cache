@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "/mnXqJ3IHGyZL0sVSGyBvFm597zJMU4sH/pRF+1JTsJmq1PTswHVk008GkG7aEHBJ/sVKq8mm1NyNk7ZEHkoIQ==",
+  "dgSpecHash": "CgF8aRp0d8kX2lcDoMhfx+t0FP8BlQcNHxURTTDikkctyJjis3hG/h6mrF3/FJY7yYAiWjJQifX4KHiGf1zNyA==",
   "success": true,
   "projectFilePath": "C:\\Users\\fidan.uka\\source\\repos\\Ms.Inventory\\Ms.Inventory.Database\\Ms.Inventory.Database.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\fidan.uka\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\fidan.uka\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -2,9 +2,9 @@
 {
     public class ProductRto
     {
-        public long CompanyPrefix { get; set; }
+        public int CompanyPrefix { get; set; }
         public string CompanyName { get; set; }
-        public long ItemReference { get; set; }
+        public int ItemReference { get; set; }
         public string ProductName { get; set; }
     }
 }

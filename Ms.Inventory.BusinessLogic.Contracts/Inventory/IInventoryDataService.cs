@@ -6,8 +6,8 @@ namespace Ms.Inventory.BusinessLogic.Contracts.Inventory
     public interface IInventoryDataService
     {
         Task SaveInventoryDataAsync(InventoryDataBlo inventoryDataBlo);
-        Task<int> GetInventoryCountByProductAndInventoryIdAsync(long itemReference, string inventoryId);
-        Task<int> GetInventoryCountByProductPerDayAsync(long itemReference);
+        Task<int> GetInventoryCountByProductAndInventoryIdAsync(int itemReference, string inventoryId);
+        Task<int> GetInventoryCountByProductPerDayAsync(int itemReference);
         Task<int> GetInventoryCountByCompanyAsync(string company);
     }
 }
