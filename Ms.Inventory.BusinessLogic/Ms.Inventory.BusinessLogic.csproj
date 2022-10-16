@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Ms.Inventory.BusinessLogic.Contracts\Ms.Inventory.BusinessLogic.Contracts.csproj" />
+    <ProjectReference Include="..\Ms.Inventory.Database.Contracts\Ms.Inventory.Database.Contracts.csproj" />
   </ItemGroup>
 
 </Project>
