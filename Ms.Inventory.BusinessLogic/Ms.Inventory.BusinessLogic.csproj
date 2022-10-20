@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Ms.Inventory.BusinessLogic.Contracts\Ms.Inventory.BusinessLogic.Contracts.csproj" />
     <ProjectReference Include="..\Ms.Inventory.Database.Contracts\Ms.Inventory.Database.Contracts.csproj" />
+    <ProjectReference Include="..\Ms.Inventory.Shared\Ms.Inventory.Shared.csproj" />
   </ItemGroup>
 
 </Project>

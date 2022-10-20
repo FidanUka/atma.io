@@ -1,0 +1,10 @@
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Shared\bin\Debug\netcoreapp3.1\Ms.Inventory.Shared.deps.json
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Shared\bin\Debug\netcoreapp3.1\Ms.Inventory.Shared.dll
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Shared\bin\Debug\netcoreapp3.1\Ms.Inventory.Shared.pdb
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Shared\obj\Debug\netcoreapp3.1\Ms.Inventory.Shared.csproj.AssemblyReference.cache
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Shared\obj\Debug\netcoreapp3.1\Ms.Inventory.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Shared\obj\Debug\netcoreapp3.1\Ms.Inventory.Shared.AssemblyInfoInputs.cache
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Shared\obj\Debug\netcoreapp3.1\Ms.Inventory.Shared.AssemblyInfo.cs
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Shared\obj\Debug\netcoreapp3.1\Ms.Inventory.Shared.csproj.CoreCompileInputs.cache
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Shared\obj\Debug\netcoreapp3.1\Ms.Inventory.Shared.dll
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Shared\obj\Debug\netcoreapp3.1\Ms.Inventory.Shared.pdb

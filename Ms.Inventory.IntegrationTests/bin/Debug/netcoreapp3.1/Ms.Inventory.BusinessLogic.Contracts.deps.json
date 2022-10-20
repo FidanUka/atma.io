@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Ms.Inventory.BusinessLogic.Contracts/1.0.0": {
+        "dependencies": {
+          "Ms.Inventory.BusinessLogic.Blo": "1.0.0"
+        },
+        "runtime": {
+          "Ms.Inventory.BusinessLogic.Contracts.dll": {}
+        }
+      },
+      "Ms.Inventory.BusinessLogic.Blo/1.0.0": {
+        "runtime": {
+          "Ms.Inventory.BusinessLogic.Blo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ms.Inventory.BusinessLogic.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ms.Inventory.BusinessLogic.Blo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

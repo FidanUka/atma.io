@@ -1,13 +1,13 @@
 ﻿using Ms.Inventory.BusinessLogic.Blo.Inventory;
-using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace Ms.Inventory.BusinessLogic.Contracts.Inventory
 {
     public interface IInventoryDataService
     {
-        Task SaveInventoryDataAsync(InventoryDataBlo inventoryDataBlo);
-        Task<int> GetInventoryCountByProductAndInventoryIdAsync(int itemReference, string inventoryId);
-        Task<int> GetInventoryCountByProductPerDayAsync(int itemReference);
-        Task<int> GetInventoryCountByCompanyAsync(string company);
+        void SaveInventoryData(InventoryDataBlo inventoryDataBlo);
+        IEnumerable<InventoryPerProductBlo> GetInventoryCountGroupedByProductAndInventoryId();
+        IEnumerable<InventoryProductPerDayBlo> GetInventoryCountGroupedByProductPerDay();
+        Dictionary<string, int> GetInventoryCountGroupedByCompany();
     }
 }

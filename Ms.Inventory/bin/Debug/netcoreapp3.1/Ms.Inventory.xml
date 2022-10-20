@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ms.Inventory</name>
+    </assembly>
+    <members>
+        <member name="T:Ms.Inventory.Controllers.InventoryController">
+            <summary>
+            Inventory controller provides the endpoints to add and fetch inventory data
+            </summary>
+        </member>
+        <member name="M:Ms.Inventory.Controllers.InventoryController.AddInventoryData(Ms.Inventory.Dto.Inventory.InventoryDataDto)">
+            <summary>
+            Save inventory data
+            </summary>
+            <param name="inventoryDataDto">The object with inventory data</param>
+            <returns code="200">if data saved successfuly</returns>
+        </member>
+        <member name="M:Ms.Inventory.Controllers.InventoryController.GetInventoryData">
+            <summary>
+            Fetchs the count of products per inventory
+            </summary>
+            <returns code="200">if data are queried successfully</returns>
+        </member>
+        <member name="M:Ms.Inventory.Controllers.InventoryController.GetInventoryProductDataPerDay">
+            <summary>
+            Fetchs the count of products per day
+            </summary>
+            <returns code="200">if data are queried successfully</returns>
+        </member>
+        <member name="M:Ms.Inventory.Controllers.InventoryController.GetInventoryDataPerCompany">
+            <summary>
+            Fetchs the count of products per company
+            </summary>
+            <returns code="200">if data are queried successfully</returns>
+        </member>
+        <member name="T:Ms.Inventory.Controllers.ProductController">
+            <summary>
+            Product controller provides the endpoint to add product data
+            </summary>
+        </member>
+        <member name="M:Ms.Inventory.Controllers.ProductController.AddProduct(Ms.Inventory.Dto.Product.ProductDto)">
+            <summary>
+            Save inventory data
+            </summary>
+            <param name="productDto">The object with product data</param>
+            <returns code="200">if data saved successfuly</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,10 @@
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Database.Rto\bin\Debug\netcoreapp3.1\Ms.Inventory.Database.Rto.deps.json
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Database.Rto\bin\Debug\netcoreapp3.1\Ms.Inventory.Database.Rto.dll
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Database.Rto\bin\Debug\netcoreapp3.1\Ms.Inventory.Database.Rto.pdb
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Database.Rto\obj\Debug\netcoreapp3.1\Ms.Inventory.Database.Rto.csproj.AssemblyReference.cache
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Database.Rto\obj\Debug\netcoreapp3.1\Ms.Inventory.Database.Rto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Database.Rto\obj\Debug\netcoreapp3.1\Ms.Inventory.Database.Rto.AssemblyInfoInputs.cache
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Database.Rto\obj\Debug\netcoreapp3.1\Ms.Inventory.Database.Rto.AssemblyInfo.cs
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Database.Rto\obj\Debug\netcoreapp3.1\Ms.Inventory.Database.Rto.csproj.CoreCompileInputs.cache
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Database.Rto\obj\Debug\netcoreapp3.1\Ms.Inventory.Database.Rto.dll
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Database.Rto\obj\Debug\netcoreapp3.1\Ms.Inventory.Database.Rto.pdb

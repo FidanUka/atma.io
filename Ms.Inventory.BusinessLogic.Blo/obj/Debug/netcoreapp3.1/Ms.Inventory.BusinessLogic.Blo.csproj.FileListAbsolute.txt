@@ -1,0 +1,10 @@
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.BusinessLogic.Blo\bin\Debug\netcoreapp3.1\Ms.Inventory.BusinessLogic.Blo.deps.json
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.BusinessLogic.Blo\bin\Debug\netcoreapp3.1\Ms.Inventory.BusinessLogic.Blo.dll
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.BusinessLogic.Blo\bin\Debug\netcoreapp3.1\Ms.Inventory.BusinessLogic.Blo.pdb
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.BusinessLogic.Blo\obj\Debug\netcoreapp3.1\Ms.Inventory.BusinessLogic.Blo.csproj.AssemblyReference.cache
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.BusinessLogic.Blo\obj\Debug\netcoreapp3.1\Ms.Inventory.BusinessLogic.Blo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.BusinessLogic.Blo\obj\Debug\netcoreapp3.1\Ms.Inventory.BusinessLogic.Blo.AssemblyInfoInputs.cache
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.BusinessLogic.Blo\obj\Debug\netcoreapp3.1\Ms.Inventory.BusinessLogic.Blo.AssemblyInfo.cs
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.BusinessLogic.Blo\obj\Debug\netcoreapp3.1\Ms.Inventory.BusinessLogic.Blo.csproj.CoreCompileInputs.cache
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.BusinessLogic.Blo\obj\Debug\netcoreapp3.1\Ms.Inventory.BusinessLogic.Blo.dll
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.BusinessLogic.Blo\obj\Debug\netcoreapp3.1\Ms.Inventory.BusinessLogic.Blo.pdb

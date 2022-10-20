@@ -68,6 +68,29 @@
         "runtime": {
           "bin/placeholder/Ms.Inventory.Database.Rto.dll": {}
         }
+      },
+      "Ms.Inventory.Dto/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Ms.Inventory.Dto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ms.Inventory.Dto.dll": {}
+        }
+      },
+      "Ms.Inventory.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Ms.Inventory.Dto": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ms.Inventory.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ms.Inventory.Shared.dll": {}
+        }
       }
     }
   },
@@ -175,13 +198,24 @@
       "type": "project",
       "path": "../Ms.Inventory.Database.Rto/Ms.Inventory.Database.Rto.csproj",
       "msbuildProject": "../Ms.Inventory.Database.Rto/Ms.Inventory.Database.Rto.csproj"
+    },
+    "Ms.Inventory.Dto/1.0.0": {
+      "type": "project",
+      "path": "../Ms.Inventory.Dto/Ms.Inventory.Dto.csproj",
+      "msbuildProject": "../Ms.Inventory.Dto/Ms.Inventory.Dto.csproj"
+    },
+    "Ms.Inventory.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Ms.Inventory.Shared/Ms.Inventory.Shared.csproj",
+      "msbuildProject": "../Ms.Inventory.Shared/Ms.Inventory.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AutoMapper >= 12.0.0",
       "Ms.Inventory.BusinessLogic.Contracts >= 1.0.0",
-      "Ms.Inventory.Database.Contracts >= 1.0.0"
+      "Ms.Inventory.Database.Contracts >= 1.0.0",
+      "Ms.Inventory.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -224,6 +258,9 @@
             },
             "C:\\Users\\fidan.uka\\source\\repos\\Ms.Inventory\\Ms.Inventory.Database.Contracts\\Ms.Inventory.Database.Contracts.csproj": {
               "projectPath": "C:\\Users\\fidan.uka\\source\\repos\\Ms.Inventory\\Ms.Inventory.Database.Contracts\\Ms.Inventory.Database.Contracts.csproj"
+            },
+            "C:\\Users\\fidan.uka\\source\\repos\\Ms.Inventory\\Ms.Inventory.Shared\\Ms.Inventory.Shared.csproj": {
+              "projectPath": "C:\\Users\\fidan.uka\\source\\repos\\Ms.Inventory\\Ms.Inventory.Shared\\Ms.Inventory.Shared.csproj"
             }
           }
         }

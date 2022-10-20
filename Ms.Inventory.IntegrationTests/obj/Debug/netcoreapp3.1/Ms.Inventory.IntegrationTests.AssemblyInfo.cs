@@ -11,6 +11,20 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Ms.Inventory.BusinessLogic.Blo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=" +
+    "null", "C:\\Users\\fidan.uka\\source\\repos\\Ms.Inventory\\Ms.Inventory.BusinessLogic.Blo", "Ms.Inventory.BusinessLogic.Blo.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Ms.Inventory.BusinessLogic.Contracts, Version=1.0.0.0, Culture=neutral, PublicKey" +
+    "Token=null", "C:\\Users\\fidan.uka\\source\\repos\\Ms.Inventory\\Ms.Inventory.BusinessLogic.Contracts" +
+    "", "Ms.Inventory.BusinessLogic.Contracts.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Ms.Inventory.BusinessLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" +
+    "", "C:\\Users\\fidan.uka\\source\\repos\\Ms.Inventory\\Ms.Inventory.BusinessLogic", "Ms.Inventory.BusinessLogic.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Ms.Inventory.Database.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken" +
+    "=null", "C:\\Users\\fidan.uka\\source\\repos\\Ms.Inventory\\Ms.Inventory.Database.Contracts", "Ms.Inventory.Database.Contracts.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Ms.Inventory.Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\fidan.uka\\source\\repos\\Ms.Inventory\\Ms.Inventory.Database", "Ms.Inventory.Database.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Ms.Inventory.Database.Rto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\fidan.uka\\source\\repos\\Ms.Inventory\\Ms.Inventory.Database.Rto", "Ms.Inventory.Database.Rto.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Ms.Inventory, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\fidan.uka\\source\\repos\\Ms.Inventory\\Ms.Inventory", "Ms.Inventory.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Ms.Inventory.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\fidan.uka\\source\\repos\\Ms.Inventory\\Ms.Inventory.Dto", "Ms.Inventory.Dto.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Ms.Inventory.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\fidan.uka\\source\\repos\\Ms.Inventory\\Ms.Inventory.Shared", "Ms.Inventory.Shared.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ms.Inventory.IntegrationTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

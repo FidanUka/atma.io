@@ -4,17 +4,25 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Configurations\Mapping\" />
-  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Ms.Inventory.xml</DocumentationFile>
+    <OutputPath></OutputPath>
+  </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Ms.Inventory.BusinessLogic.Blo\Ms.Inventory.BusinessLogic.Blo.csproj" />
     <ProjectReference Include="..\Ms.Inventory.BusinessLogic.Contracts\Ms.Inventory.BusinessLogic.Contracts.csproj" />
+    <ProjectReference Include="..\Ms.Inventory.BusinessLogic\Ms.Inventory.BusinessLogic.csproj" />
+    <ProjectReference Include="..\Ms.Inventory.Database.Contracts\Ms.Inventory.Database.Contracts.csproj" />
+    <ProjectReference Include="..\Ms.Inventory.Database.Rto\Ms.Inventory.Database.Rto.csproj" />
+    <ProjectReference Include="..\Ms.Inventory.Database\Ms.Inventory.Database.csproj" />
     <ProjectReference Include="..\Ms.Inventory.Dto\Ms.Inventory.Dto.csproj" />
   </ItemGroup>
 

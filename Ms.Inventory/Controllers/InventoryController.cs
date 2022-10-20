@@ -3,10 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 using Ms.Inventory.BusinessLogic.Blo.Inventory;
 using Ms.Inventory.BusinessLogic.Contracts.Inventory;
 using Ms.Inventory.Dto.Inventory;
-using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace Ms.Inventory.Controllers
 {
+    /// <summary>
+    /// Inventory controller provides the endpoints to add and fetch inventory data
+    /// </summary>
     [Route("inventory")]
     public class InventoryController : Controller
     {
@@ -20,33 +23,52 @@ namespace Ms.Inventory.Controllers
             _mapper = mapper;
         }
 
+        /// <summary>
+        /// Save inventory data
+        /// </summary>
+        /// <param name="inventoryDataDto">The object with inventory data</param>
+        /// <returns code="200">if data saved successfuly</returns>
         [HttpPost]
-        public async Task<ActionResult> AddInventoryData([FromBody] InventoryDataDto inventoryDataDto)
+        public ActionResult AddInventoryData([FromBody] InventoryDataDto inventoryDataDto)
         {
             var inventoryDataBlo = _mapper.Map<InventoryDataBlo>(inventoryDataDto);
-            await _inventoryDataService.SaveInventoryDataAsync(inventoryDataBlo);
+            _inventoryDataService.SaveInventoryData(inventoryDataBlo);
             return Ok();
         }
 
-        [HttpGet, Route("{itemReference}/{inventoryId}")]
-        public async Task<ActionResult<int>> GetInventoryData([FromRoute] int itemReference, [FromRoute] string inventoryId)
+        /// <summary>
+        /// Fetchs the count of products per inventory
+        /// </summary>
+        /// <returns code="200">if data are queried successfully</returns>
+        [HttpGet, Route("counts/products")]
+        public ActionResult<IEnumerable<InventoryPerProductDto>> GetInventoryData()
         {
-            int count = await _inventoryDataService.GetInventoryCountByProductAndInventoryIdAsync(itemReference, inventoryId);
-            return Ok(count);
+            var inventoryPerProductBlo = _inventoryDataService.GetInventoryCountGroupedByProductAndInventoryId();
+            var inventoryPerProductDto = _mapper.Map<IEnumerable<InventoryPerProductDto>>(inventoryPerProductBlo);
+            return Ok(inventoryPerProductDto);
         }
-            
-        [HttpGet, Route("{itemReference}")]
-        public async Task<ActionResult<int>> GetInventoryData([FromRoute] int itemReference)
+
+        /// <summary>
+        /// Fetchs the count of products per day
+        /// </summary>
+        /// <returns code="200">if data are queried successfully</returns>
+        [HttpGet, Route("counts/daily/products")]
+        public ActionResult<IEnumerable<InventoryProductPerDayDto>> GetInventoryProductDataPerDay()
         {
-            int count = await _inventoryDataService.GetInventoryCountByProductPerDayAsync(itemReference);
-            return Ok(count);
+            var inventoryProductPerDayBlo = _inventoryDataService.GetInventoryCountGroupedByProductPerDay();
+            var inventoryProductPerDayDto = _mapper.Map<IEnumerable<InventoryProductPerDayDto>>(inventoryProductPerDayBlo);
+            return Ok(inventoryProductPerDayDto);
         }
-            
-        [HttpGet, Route("{company}")]
-        public async Task<ActionResult<int>> GetInventoryData([FromRoute] string company)
+
+        /// <summary>
+        /// Fetchs the count of products per company
+        /// </summary>
+        /// <returns code="200">if data are queried successfully</returns>
+        [HttpGet, Route("counts/company/products")]
+        public ActionResult<Dictionary<string, int>> GetInventoryDataPerCompany()
         {
-            int count = await _inventoryDataService.GetInventoryCountByCompanyAsync(company);
-            return Ok(count);
+            var result = _inventoryDataService.GetInventoryCountGroupedByCompany();
+            return Ok(result);
         }
     }
 }
