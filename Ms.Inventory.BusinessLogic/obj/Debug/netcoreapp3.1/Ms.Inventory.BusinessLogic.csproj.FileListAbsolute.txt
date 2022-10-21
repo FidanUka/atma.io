@@ -19,3 +19,5 @@ C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.BusinessLogic\obj\Debu
 C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.BusinessLogic\obj\Debug\netcoreapp3.1\Ms.Inventory.BusinessLogic.pdb
 C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.BusinessLogic\bin\Debug\netcoreapp3.1\Ms.Inventory.Shared.dll
 C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.BusinessLogic\bin\Debug\netcoreapp3.1\Ms.Inventory.Shared.pdb
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.BusinessLogic\bin\Debug\netcoreapp3.1\Ms.Inventory.Dto.dll
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.BusinessLogic\bin\Debug\netcoreapp3.1\Ms.Inventory.Dto.pdb

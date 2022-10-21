@@ -55,7 +55,15 @@
           "Ms.Inventory.Database.Rto.dll": {}
         }
       },
+      "Ms.Inventory.Dto/1.0.0": {
+        "runtime": {
+          "Ms.Inventory.Dto.dll": {}
+        }
+      },
       "Ms.Inventory.Shared/1.0.0": {
+        "dependencies": {
+          "Ms.Inventory.Dto": "1.0.0"
+        },
         "runtime": {
           "Ms.Inventory.Shared.dll": {}
         }
@@ -98,6 +106,11 @@
       "sha512": ""
     },
     "Ms.Inventory.Database.Rto/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ms.Inventory.Dto/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

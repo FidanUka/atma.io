@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "Ms.Inventory.Shared/1.0.0": {
+        "dependencies": {
+          "Ms.Inventory.Dto": "1.0.0"
+        },
         "runtime": {
           "Ms.Inventory.Shared.dll": {}
+        }
+      },
+      "Ms.Inventory.Dto/1.0.0": {
+        "runtime": {
+          "Ms.Inventory.Dto.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Ms.Inventory.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ms.Inventory.Dto/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -8,3 +8,6 @@ C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Shared\obj\Debug\netco
 C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Shared\obj\Debug\netcoreapp3.1\Ms.Inventory.Shared.csproj.CoreCompileInputs.cache
 C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Shared\obj\Debug\netcoreapp3.1\Ms.Inventory.Shared.dll
 C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Shared\obj\Debug\netcoreapp3.1\Ms.Inventory.Shared.pdb
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Shared\bin\Debug\netcoreapp3.1\Ms.Inventory.Dto.dll
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Shared\bin\Debug\netcoreapp3.1\Ms.Inventory.Dto.pdb
+C:\Users\fidan.uka\source\repos\Ms.Inventory\Ms.Inventory.Shared\obj\Debug\netcoreapp3.1\Ms.Inventory.Shared.csproj.CopyComplete

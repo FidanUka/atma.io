@@ -12,6 +12,12 @@ namespace Ms.Inventory.Database.Repositories
         private Dictionary<string, ProductRto> products = new Dictionary<string, ProductRto>();
         private Dictionary<string, InventoryDataRto> inventory = new Dictionary<string, InventoryDataRto>();
 
+        public void ClearData()
+        {
+            products.Clear();
+            inventory.Clear();
+        }
+
         public IEnumerable<InventoryPerCompanyRto> GetInventoriedItemsGroupedByCompany()
         {
             try

@@ -16,22 +16,24 @@ namespace Ms.Inventory.Shared.Helpers
             {
                 for (int p = 1; p <= numberOfProductsPerCompany; p++)
                 {
+                    var product = new ProductDto
+                    {
+                        CompanyName = $"Company-{c}",
+                        CompanyPrefix = 30 + c,
+                        ItemReference = int.Parse(c.ToString() + "0000") + p,
+                        ProductName = $"Product-{int.Parse(c.ToString() + "00") + p}",
+                    };
+                    products.Add(product);
+
                     for (int ip = 1; ip <= numberOfInventoryPerProduct; ip++)
                     {
-                        var product = new ProductDto
-                        {
-                            CompanyName = $"Company-{c}",
-                            CompanyPrefix = 30 + c,
-                            ProductName = $"Product-{p}",
-                            ItemReference = 10000 + p
-                        };
-                        products.Add(product);
                         var inventory = new InventoryDataDto
                         {
                             DateOfInventory = DateTime.Now.AddDays(ip),
-                            InventoryId = $"Inventory-{ip}",
+                            InventoryId = $"Inventory-{c}-{p}-{ip}",
                             ItemReference = product.ItemReference,
-                            Location = "LocationA"
+                            Location = "LocationA",
+                            Tags = new HashSet<string>()
                         };
                         inventoryList.Add(inventory);
 

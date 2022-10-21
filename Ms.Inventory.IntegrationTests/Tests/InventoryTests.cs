@@ -5,6 +5,7 @@ using Ms.Inventory.IntegrationTests.Common;
 using Ms.Inventory.Shared.Helpers;
 using NUnit.Framework;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -50,18 +51,47 @@ namespace Ms.Inventory.IntegrationTests.Tests
         public async Task GetInventory_GetInventoryGroupedByCompany_ReturnsSuccess()
         {
             //Arrange
-            await InsertData();
+            var data = await InsertData();
 
             //Act
-
+            var response = await Requests.GetInventoryGroupedByCompany<Dictionary<string, int>>();
 
             //Assert
+            Assert.IsNotNull(response);
+            int companyCount = data.products.Select(x => x.CompanyPrefix).Distinct().Count();
+            Assert.That(response.Count, Is.EqualTo(companyCount));
+        }
 
+        [Test]
+        public async Task GetInventory_GetInventoryGroupedByProductAndInventory_ReturnsSuccess()
+        {
+            //Arrange
+            var data = await InsertData();
+
+            //Act
+            var response = await Requests.GetInventoryGroupedByProductAndInventory<IEnumerable<InventoryPerProductDto>>();
+
+            //Assert
+            Assert.IsNotNull(response);
+        }
+
+        [Test]
+        public async Task GetInventory_GetInventoryGroupedByProductPerDay_ReturnsSuccess()
+        {
+            //Arrange
+            var data = await InsertData();
+
+            //Act
+            var response = await Requests.GetInventoryGroupedByProductPerDay<IEnumerable<InventoryProductPerDayDto>>();
+
+            //Assert
+            Assert.IsNotNull(response);
         }
 
         #region Helper Methods
-        private async Task InsertData()
+        private async Task<(List<ProductDto> products, List<InventoryDataDto> inventory)> InsertData()
         {
+            //this is a very naive data insertion for testing purposes
             var tuple = InventoryHelper.CreateInventory(3, 5, 3, 10);
 
             foreach (var product in tuple.products)
@@ -73,6 +103,8 @@ namespace Ms.Inventory.IntegrationTests.Tests
             {
                 await Requests.PostInventory<string>(inventory, emptyResponse: true);
             }
+
+            return tuple;
         }
         #endregion
     }

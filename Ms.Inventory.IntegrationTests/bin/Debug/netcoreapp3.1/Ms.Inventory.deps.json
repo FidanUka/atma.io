@@ -1222,6 +1222,9 @@
         }
       },
       "Ms.Inventory.Shared/1.0.0": {
+        "dependencies": {
+          "Ms.Inventory.Dto": "1.0.0"
+        },
         "runtime": {
           "Ms.Inventory.Shared.dll": {}
         },
