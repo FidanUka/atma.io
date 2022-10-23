@@ -26,6 +26,10 @@ namespace Ms.Inventory.Configurations.Exceptions
             {
                 await HandleTagValidationExceptionMessageAsync(context, ex).ConfigureAwait(false);
             }
+            catch(ProductException ex)
+            {
+                await HandleProductExceptionMessageAsync(context, ex).ConfigureAwait(false);
+            }
             catch (Exception ex)
             {
                 await HandleExceptionMessageAsync(context, ex).ConfigureAwait(false);
@@ -33,6 +37,20 @@ namespace Ms.Inventory.Configurations.Exceptions
         }
 
         private static Task HandleTagValidationExceptionMessageAsync(HttpContext context, TagValidationException exception)
+        {
+            int statusCode = (int)HttpStatusCode.BadRequest;
+
+            var result = JsonSerializer.Serialize(new
+            {
+                exception.Message
+            }, new JsonSerializerOptions { WriteIndented = false });
+
+            context.Response.ContentType = "application/json";
+            context.Response.StatusCode = statusCode;
+            return context.Response.WriteAsync(result);
+        }
+
+        private static Task HandleProductExceptionMessageAsync(HttpContext context, ProductException exception)
         {
             int statusCode = (int)HttpStatusCode.BadRequest;
 

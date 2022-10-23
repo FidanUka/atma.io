@@ -55,6 +55,19 @@ namespace Ms.Inventory.Database.Repositories
             }
         }
 
+        public IEnumerable<ProductRto> GetProducts()
+        {
+            try
+            {
+                return products.Values;
+            }
+            catch (Exception)
+            {
+                //log here
+                throw new Exception("Error while fetching products");
+            }
+        }
+
         public void SaveInventoryData(InventoryDataRto inventoryDataRto)
         {
             try

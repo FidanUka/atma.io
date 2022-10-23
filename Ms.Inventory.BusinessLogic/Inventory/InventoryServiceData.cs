@@ -85,6 +85,8 @@ namespace Ms.Inventory.BusinessLogic.Inventory
 
         public void SaveInventoryData(InventoryDataBlo inventoryDataBlo)
         {
+            CheckTagsValidity(inventoryDataBlo.Tags);
+            ValidateProduct(inventoryDataBlo);
             var inventoryDataRto = _mapper.Map<InventoryDataRto>(inventoryDataBlo);
             _repository.SaveInventoryData(inventoryDataRto);
         }
@@ -100,6 +102,15 @@ namespace Ms.Inventory.BusinessLogic.Inventory
             {
                 //log tags that failed validation
                 throw new TagValidationException("Validation for the list of tags failed");
+            }
+        }
+
+        private void ValidateProduct(InventoryDataBlo inventory)
+        {
+            var products = _repository.GetProducts();
+            if(!products.Any(x=>x.ItemReference == inventory.ItemReference))
+            {
+                throw new ProductException("Inventory for invalid product");
             }
         }
         #endregion

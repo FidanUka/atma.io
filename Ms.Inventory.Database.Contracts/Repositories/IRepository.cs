@@ -10,6 +10,7 @@ namespace Ms.Inventory.Database.Contracts.Repositories
         void SaveInventoryData(InventoryDataRto inventoryDataRto);
         IEnumerable<InventoryPerCompanyRto> GetInventoriedItemsGroupedByCompany();
         IEnumerable<InventoryPerProductRto> GetInventoriedItemsGroupedByProduct();
+        IEnumerable<ProductRto> GetProducts();
         void ClearData();
     }
 }
