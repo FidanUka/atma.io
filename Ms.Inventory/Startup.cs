@@ -1,14 +1,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.OpenApi.Models;
 using Ms.Inventory.Configurations.Dependency;
+using Ms.Inventory.Configurations.Exceptions;
 using System;
 using System.IO;
-using System.Reflection;
 using System.Text.Json.Serialization;
 
 namespace Ms.Inventory
@@ -28,7 +26,8 @@ namespace Ms.Inventory
                     options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
                 })
                 .AddJsonOptions(opt => opt.JsonSerializerOptions.PropertyNamingPolicy = null);
-            services.AddMvcCore();
+            services.AddMvcCore()
+                    .AddDataAnnotations();
             services.AddSwaggerGen(x =>
             {
                 x.SwaggerDoc("v1", new OpenApiInfo
@@ -43,8 +42,8 @@ namespace Ms.Inventory
                     x.IncludeXmlComments(Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, @"..\..\Ms.Inventory.xml")));
                 }
                 catch (Exception)
-                {}
-               
+                { }
+
             });
         }
 
@@ -68,6 +67,8 @@ namespace Ms.Inventory
             });
 
             app.UseRouting();
+
+            app.UseMiddleware<ExceptionHandlerMiddleware>();
 
             app.UseEndpoints(endpoints =>
             {

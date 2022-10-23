@@ -60,6 +60,7 @@ namespace Ms.Inventory.IntegrationTests.Tests
             Assert.IsNotNull(response);
             int companyCount = data.products.Select(x => x.CompanyPrefix).Distinct().Count();
             Assert.That(response.Count, Is.EqualTo(companyCount));
+            //Further assertion here
         }
 
         [Test]
@@ -73,6 +74,7 @@ namespace Ms.Inventory.IntegrationTests.Tests
 
             //Assert
             Assert.IsNotNull(response);
+            //Further assertion here
         }
 
         [Test]
@@ -86,6 +88,7 @@ namespace Ms.Inventory.IntegrationTests.Tests
 
             //Assert
             Assert.IsNotNull(response);
+            //Further assertion here
         }
 
         #region Helper Methods

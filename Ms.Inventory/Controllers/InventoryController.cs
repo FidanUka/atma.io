@@ -31,6 +31,10 @@ namespace Ms.Inventory.Controllers
         [HttpPost]
         public ActionResult AddInventoryData([FromBody] InventoryDataDto inventoryDataDto)
         {
+            if(inventoryDataDto.InventoryId.Length > 32)
+            {
+                return BadRequest("Inventory Id should not be longer than 32 characters");
+            }
             var inventoryDataBlo = _mapper.Map<InventoryDataBlo>(inventoryDataDto);
             _inventoryDataService.SaveInventoryData(inventoryDataBlo);
             return Ok();
